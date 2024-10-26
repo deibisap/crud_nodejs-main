@@ -6,6 +6,12 @@ app.use(express.json());
 
 app.use('/', require('./router'));
 
+//DIRECTORIO PUBLICO
+app.use('/resource', express.static('public'));
+app.use('/resource', express.static(__dirname + 'public'));
+
+
+//CONFIGURACIÓN DE SERVIDOR
 app.listen(3000, ()=>{
     console.log('SERVER corriendo en http://localhost:3000');
 });
