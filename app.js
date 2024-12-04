@@ -12,6 +12,6 @@ app.use('/resource', express.static(__dirname + 'public'));
 
 
 //CONFIGURACIÓN DE SERVIDOR
-app.listen(3000, ()=>{
-    console.log('SERVER corriendo en http://localhost:3000');
+app.listen(3001, ()=>{
+    console.log('SERVER corriendo en http://localhost:3001');
 });
